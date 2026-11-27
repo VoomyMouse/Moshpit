@@ -169,7 +169,7 @@ function addOverlay() {
 }
 
 
-// proportions
+// size
 
 function letterSize(img, size) {
   let aspect = img.naturalWidth / img.naturalHeight;
@@ -180,7 +180,7 @@ function letterSize(img, size) {
 }
 
 
-// main loop
+// strobe interval
 
 function draw() {
   let interval = 60000 / STROBE_BPM / (STROBE_RATE / 4);
@@ -246,7 +246,7 @@ function draw() {
 }
 
 
-// letters collisions
+// letter collision
 
 function colLetters(scale) {
   for (let i = 0; i < letters.length; i++) {
@@ -303,7 +303,7 @@ function colLetters(scale) {
 }
 
 
-// menu collisions
+// menu collision
 
 function colMenu() {
   let items = [infoGraphic, strobeIcon, musicIcon];
